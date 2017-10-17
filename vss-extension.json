@@ -1,0 +1,73 @@
+{
+    "manifestVersion": 1,
+    "id": "px2rem snippet",
+    "version": "0.1.0",
+    "name": "px2rem snippet",
+    "publisher": "fabrikam",
+    "description": "A plugin autocomplete 12px to px2rem(12) or .8rem",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "icon.png"
+    },
+    "scopes": [
+        "vso.work",
+        "vso.code_write",
+        "vso.build_execute"
+    ],
+    "categories": [
+        "Formatters", "Snippets", "Other"
+    ],
+    "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/liangsandian/vscode-px2rem"
+        },
+        "support": {
+            "uri": "https://github.com/liangsandian/vscode-px2rem"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/liangsandian/vscode-px2rem.git"
+    },
+    "contributions": [
+        {
+            "id": "showCommits",
+            "type": "ms.vss-web.action",
+            "description": "Adds a menu action from builds grid to show associated items.",
+            "targets": [
+                "ms.vss-build-web.completed-build-menu"
+            ],
+            "properties": {
+                "title": "View associated items",
+                "uri": "launch.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "launch.html",
+            "addressable": true
+        },        
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "out"
+        }
+    ]
+}
